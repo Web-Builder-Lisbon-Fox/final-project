@@ -113,19 +113,24 @@ function Homepage({ setIsOpen }) {
           <div className="w-96">
             <img
               className="object-cover object-center w-full h-64 rounded-md shadow"
-              src="https://cdn.discordapp.com/attachments/867703929218400256/869628893819203664/ezgif-2-7bff5e64d2a8.gif"
+              src="https://cdn.discordapp.com/attachments/867728565310062603/870166269960261652/jack_gif.gif"
               alt="home"
             />
-            <h3
-              className="mt-2"
-              style={{
-                fontWeight: "bolder",
-                color: "#f5a962",
-                fontSize: "2.5rem",
-              }}
+            <Link
+              to="/deploy/Jack%20Construction/5"
+              target="_blank"
             >
-              Jack Construction
-            </h3>
+              <h3
+                className="mt-2 cust-web"
+                style={{
+                  fontWeight: "bolder",
+                  color: "#f5a962",
+                  fontSize: "2.5rem",
+                }}
+              >
+                Jack Construction
+              </h3>
+            </Link>
             <p
               className="text-gray-600"
               style={{ fontSize: "1rem", marginTop: "0.5rem" }}
@@ -136,19 +141,24 @@ function Homepage({ setIsOpen }) {
           <div className="w-96 ml-80">
             <img
               className="object-cover object-center w-full h-64 rounded-md shadow"
-              src="https://cdn.discordapp.com/attachments/867703929218400256/869628920272670760/CPT2107280005-1882x936-min.gif"
+              src="https://cdn.discordapp.com/attachments/867728565310062603/870166272556539964/whimson_gif.gif"
               alt="home"
             />
-            <h3
-              className="mt-2"
-              style={{
-                fontWeight: "bolder",
-                color: "#f5a962",
-                fontSize: "2.5rem",
-              }}
+            <Link
+              to="/deploy/Whimson%20Law%20Firm/7"
+              target="_blank"
             >
-              Whimson Law Firm
-            </h3>
+              <h3
+                className="mt-2 cust-web"
+                style={{
+                  fontWeight: "bolder",
+                  color: "#f5a962",
+                  fontSize: "2.5rem",
+                }}
+              >
+                Whimson Law Firm
+              </h3>
+            </Link>
             <p
               className="text-gray-600"
               style={{ fontSize: "1rem", marginTop: "0.5rem" }}

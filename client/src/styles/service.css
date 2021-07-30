@@ -140,6 +140,7 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    text-align: center;
   }
 
   .type-1-service .card-service,
@@ -147,6 +148,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .card-service {
@@ -154,6 +156,10 @@
     padding: 1rem;
     border-radius: 1rem;
     width: 12rem;
+  }
+
+  .card-service h1 {
+    margin-bottom: 0.5rem;
   }
 
   .text-card-service {

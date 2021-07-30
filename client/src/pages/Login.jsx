@@ -23,7 +23,7 @@ export default function Login() {
   function handleSubmit(e) {
     e.preventDefault();
     axios({
-      url: "http://34.238.245.72:4000/login",
+      url: "https://server-webber.herokuapp.com/login",
       method: "POST",
       data: {
         email,
@@ -48,7 +48,7 @@ export default function Login() {
   }
 
   const handleLogin = async (googleData) => {
-    const res = await fetch("http://34.238.245.72:4000/googleLogin", {
+    const res = await fetch("http://localhost:4000/googleLogin", {
       method: "POST",
       body: JSON.stringify({
         token: googleData.tokenId,

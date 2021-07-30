@@ -40,9 +40,12 @@ export function getTemplateId(id) {
   return async (dispatch) => {
     dispatch(setIsLoading(true));
     try {
-      const response = await fetch(`http://34.238.245.72:4000/template/${id}`, {
-        headers: { access_token: localStorage.access_token },
-      });
+      const response = await fetch(
+        `https://server-webber.herokuapp.com/template/${id}`,
+        {
+          headers: { access_token: localStorage.access_token },
+        }
+      );
       const data = await response.json();
       // console.log(data, `ini data fetch by template id di template.js`);
       dispatch(setTemplate(data));
@@ -60,7 +63,7 @@ export function getDeployTemplate(id) {
   return async (dispatch) => {
     dispatch(setIsLoading(true));
     try {
-      const response = await fetch(`http://34.238.245.72:4000/${id}`);
+      const response = await fetch(`https://server-webber.herokuapp.com/${id}`);
       const data = await response.json();
       // console.log(data, `ini data fetch by template id di template.js`);
       dispatch(setTemplate(data));

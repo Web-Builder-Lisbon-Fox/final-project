@@ -5,6 +5,7 @@ import { getReplyChatbot } from "../store/actions/forms";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import speech from "speech-js";
+import Swal from "sweetalert2"
 
 function Sidebar({ isOpen, setIsOpen }) {
   const history = useHistory();
@@ -21,15 +22,19 @@ function Sidebar({ isOpen, setIsOpen }) {
       // console.log(msgReplyChatbot.message);
       if (!msgReplyChatbot.message) {
         speech.synthesis("Sorry, can you repeat please", "en-US");
+        Swal.fire('Sorry, can you repeat please')
       } else {
         setCounterChatbot(counterChatbot + 1);
         speech.synthesis(msgReplyChatbot.message, "en-US");
+        Swal.fire(msgReplyChatbot.message)
       }
     } else {
       if (counterChatbot !== 0) {
         speech.synthesis("Sorry, can you repeat please", "en-US");
+        Swal.fire('Sorry, can you repeat please')
       }
     }
+
   }, [msgReplyChatbot.message]);
 
   useEffect(() => {});

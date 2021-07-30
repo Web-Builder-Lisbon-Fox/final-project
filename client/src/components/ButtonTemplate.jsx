@@ -23,7 +23,7 @@ export default function ButtonTemplate({ templateData }) {
         // history.push(`/deploy/${templateId}`);
         history.push("/dashboard");
         const host =
-          "http://web-builder-webber.s3-website-us-east-1.amazonaws.com";
+          "https://webber-web-builder.web.app";
         const win = window.open(
           `${host}/deploy/${
             templateData.navbar.companyName

@@ -1,3 +1,8 @@
+.cust-web:hover {
+  text-decoration: underline;
+  text-decoration-color: #f5a962;
+}
+
 .wrapper-homepage {
   overflow-x: hidden;
   margin: 0;
